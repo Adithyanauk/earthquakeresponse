@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Safety App</title>
+    <link rel="stylesheet" href="response.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+</head>
+<body>
+    <!-- Page 1 -->
+    <div id="page-1" class="page">
+        <div class="alert">
+            <img src="../alert-removebg-preview.png" alt="Alert" class="alert-icon">
+            <h1>EARTHQUAKE IS ABOUT TO HIT IN 60 SECONDS</h1>
+        </div>
+        <button id="start-running" class="btn">Start Running</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page-2" class="page hidden">
+        <h2 id="direction-instruction">Finding the safest route...</h2>
+        <div id="map"></div>
+        <div class="actions">
+            <button id="reached-safe-spot" class="btn">I have reached the safe spot</button>
+            <button id="not-reached-safe-spot" class="btn">I haven’t reached the safe spot but safe</button>
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page-3" class="page hidden">
+        <div class="safe-notification">
+            <img src="../green-check-mark-button-with-safe-text-free-png.webp" alt="Safe" class="safe-icon">
+            <h1>Your are safe from the earthquake</h1>
+            <p>For more info and medical emergency, chat with our chatbot</p>
+            <img src="../chatbot-3d-render-icon-illustration-png.webp" alt="Chatbot" class="chatbot-icon">
+        </div>
+    </div>
+
+    <script src="response.js">
+        window.embeddedChatbotConfig = {
+chatbotId: "ETOfNcdZjLL3CqpxYzAbR",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="ETOfNcdZjLL3CqpxYzAbR"
+domain="www.chatbase.co"
+defer>
+    </script>
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3TSEnk1mY2qrQYtWtxpess6cH09V6pTA&callback=initializeMap">
+</script>
+
+</body>
+</html>

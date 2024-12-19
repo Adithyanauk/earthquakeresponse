@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background:url("../WhatsApp\ Image\ 2024-12-19\ at\ 11.56.42_402d8ecb.jpg") no-repeat center;
+    background-size:cover;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert {
+    margin-bottom: 20px;
+}
+
+.alert-icon {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 24px;
+    color: red;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#map {
+    width: 90%;
+    height: 60%;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.safe-icon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.chatbot-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
